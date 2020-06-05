@@ -2,7 +2,6 @@ import requests
 import time
 import json
 
-
 def btc():
     old_price = 1
     while True:
@@ -14,5 +13,4 @@ def btc():
         print("\n\n" + time_updated + "\nbtc/dollar: " + str(rate_price) + "\nratio: %" + str(ratio))
         old_price = rate_price
         time.sleep(60)
-
 btc()
